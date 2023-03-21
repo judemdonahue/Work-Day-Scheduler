@@ -12,6 +12,8 @@ let currentHour = dayjs().format('H');
 let timeTableElement;
 let currentState;
 
+let newTime;
+
 
 //Display and update current date function
 
@@ -22,17 +24,12 @@ let currentState;
 setInterval(updateTime, 30000);
 
 
-
 function fillTimeTable() {
   for (let hour = 0; hour < totalHours; hour++) { 
     let realHour = hour + 8;
 
-    for (let timeTableElement = hourStart; timeTableElement < totalHours; timeTableElement++) {
 
-    }
-
-
-      timeTableElement = hourStart.format('h:mma');
+      timeTableElement = hourStart.add(hour, 'h').format('ha');
 
       
       // determine the currentState based on the conditions
