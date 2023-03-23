@@ -7,7 +7,7 @@ This Work Day Scheduler challenged me to put my localStorage and DOM manipulatio
 
 ## Installation
 
-Deployed Web App here
+https://judemdonahue.github.io/Work-Day-Scheduler/
 
 ## Usage
 
